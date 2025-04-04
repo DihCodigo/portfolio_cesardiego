@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #141414;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        .container, .carousel, .extra-section {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            pointer-events: none;
+        }
+
+        .active {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+            pointer-events: all !important;
+        }
+
+        .graphic-designer {
+            font-family: 'Great Vibes', cursive;
+            font-size: 60px;
+            color: #FFD700;
+            text-shadow: 2px 2px 15px rgba(255, 215, 0, 0.5);
+        }
+
+        .portfolio {
+            font-size: 80px;
+            font-weight: 700;
+            text-shadow: 3px 3px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .username {
+            font-size: 20px;
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            background-color: #FFD700;
+            color: #141414;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e6c200;
+        }
+
+        .decorative-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .circle {
+            position: absolute;
+            border: 2px solid #FFD700;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+        .circle.large {
+            width: 400px;
+            height: 400px;
+            top: 5%;
+            left: -10%;
+        }
+
+        .circle.small {
+            width: 200px;
+            height: 200px;
+            bottom: 5%;
+            right: -5%;
+        }
+
+        .star {
+            position: absolute;
+            color: #FFD700;
+            font-size: 20px;
+        }
+
+        .star.one { top: 15%; left: 10%; }
+        .star.two { bottom: 20%; right: 15%; }
+        .star.three { top: 50%; left: 80%; }
+
+        /**/
+        .content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.photo-container img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.text-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.text-content h1 {
+    font-size: 40px;
+    color: #FFD700;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text-content span {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/**/
+
+.extra-section {
+    text-align: center;
+    padding: 40px;
+    background: transparent;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.extra-section h1 {
+    font-size: 35px;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.extra-section h2 {
+    font-size: 25px;
+    color: #FFD700;
+    margin-top: 20px;
+}
+
+.extra-section p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.extra-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.extra-section li {
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.btnGroup {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.btn {
+    padding: 12px 50px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFD700;
+    color: #141414;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #e6c200;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+}
+
+.btn-back {
+    background: transparent;
+    color: #FFD700;
+    font-size: 22px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+
+}
+
+.btn-back:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <div class="decorative-elements">
+        <div class="circle large"></div>
+        <div class="circle small"></div>
+        <div class="star one">✦</div>
+        <div class="star two">✦</div>
+        <div class="star three">✦</div>
+    </div>
+
+    <!-- Sessão Inicial -->
+    <div class="container active" id="intro">
+        <div class="graphic-designer">Programador Full-Stack</div>
+        <div class="portfolio">PORTFOLIO</div>
+        <div class="username">#CésarDiegoAnovich</div>
+        <button class="btn" onclick="changeSection('carousel')">Entrar</button>
+    </div>
+
+    <!-- Sessão do Portfólio -->
+    <div class="carousel" id="carousel">
+        <div class="content">
+            <!-- Foto do programador -->
+            <div class="photo-container">
+                <img src="./assets/image/diego-removebg-preview.png" alt="César Diego Anovich">
+            </div>
+
+            <!-- Texto -->
+            <div class="text-content">
+                <h1>Seja bem vindo,</h1>
+                <p>Meu nome é <span>César Diego Anovich</span></p>
+                <p>Programador produtivo, sociável e de mente aberta, especializado em 🚀 AdTech e Performance Web.</p>
+                <p>Experiente no desenvolvimento de sistemas web, otimização de anúncios digitais e implementação de 🎯 Header Bidding, GPT e GTM.</p>
+                <p>No front-end, utilizo ⚡ React, HTML, CSS e JavaScript, com frameworks como 🎨 Bootstrap para interfaces otimizadas.</p>
+                <p>No back-end, minhas principais tecnologias são 🛠️ PHP e Java, garantindo aplicações escaláveis e eficientes.</p>
+                <p>Apaixonado por desenvolver projetos como 🔐 sistemas de login, 📄 landing pages e 📝 formulários, sempre focado em inovação, usabilidade e alto desempenho.</p>
+                <button class="btn" onclick="changeSection('extra-section')">Experiência Profissional</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sessão Extra -->
+<div class="extra-section" id="extra-section">
+    <h1>💼 Experiência Profissional</h1>
+    
+    <p>Possuo sólida experiência no desenvolvimento de sistemas web eficientes e otimizados, com foco em AdTech e Performance Web.</p>
+    <p>Sou especializado em ferramentas como Google Tag Manager (GTM) e Google Ad Manager (GAM), com ampla atuação na aplicação e otimização de códigos de Header Bidding, incluindo implementações de Lazy Loading, Ad Refresh e configurações para rastreamento de conversões, entre outras estratégias avançadas.</p>
+    <p>Além disso, possuo expertise no desenvolvimento de e-mails para e-marketing, garantindo compatibilidade total com Gmail, Outlook e outros clientes de e-mail, aplicando técnicas avançadas de responsividade e otimização para diferentes plataformas.</p>
+
+    <div class="skills">
+        <h2>🖥️ Front-End</h2>
+        <p> 
+            🌍 <strong>HTML5</strong> | 🎨 <strong>CSS3</strong> | ⚡ <strong>JavaScript</strong> | ⚛️ <strong>React</strong> | 📱 <strong>React Native</strong> | 🌪️ <strong>Tailwind</strong> | 📏 <strong>Bootstrap</strong>
+        </p>
+
+        <h2>⚙️ Back-End</h2>
+        <p> 
+            🛠️ <strong>PHP</strong> | ☕ <strong>Java</strong> | 🌍 <strong>JavaScript</strong> | ⚛️ <strong>React</strong> | 📱 <strong>React Native</strong> | 🌍 <strong>Node.js</strong> | 🍃 <strong>Spring</strong>
+        </p>
+
+        <h2>🗄️ Banco de Dados</h2>
+        <p> 
+            🗃️ <strong>MySQL</strong> | 🏛️ <strong>PostgreSQL</strong>
+        </p>
+    </div>
+
+    <!--<button class="btn" onclick="changeSection('intro')">Voltar</button>-->
+
+    <div class="btnGroup">
+        <button class="btn-back" onclick="changeSection('extra-section')">⟵</button>
+        <button class="btn" onclick="changeSection('projects')">⟶</button>
+    </div>
+       
+</div>
+
+<!-- Sessão de Cursos -->
+<div class="extra-section" id="courses">
+    <h1>📚 Cursos e Certificações</h1>
+    <ul>
+        <li>🔹 Google Ads e AdTech</li>
+        <li>🔹 Desenvolvimento Web Avançado</li>
+        <li>🔹 Banco de Dados Relacionais e NoSQL</li>
+        <li>🔹 Desenvolvimento Mobile com React Native</li>
+    </ul>
+    <div class="btnGroup">
+        <button class="btn-back" onclick="changeSection('extra-section')">⟵</button>
+        <button class="btn" onclick="changeSection('projects')">Próximo</button>
+    </div>
+    
+    
+</div>
+
+<!-- Sessão de Projetos -->
+<div class="extra-section" id="projects">
+    <h1>🚀 Projetos Destacados</h1>
+    <ul>
+        <li>📌 <strong>InkyMail</strong> - Editor de E-mails Responsivos</li>
+        <li>📌 <strong>Sistema de Ponto Digital</strong> - Registro de ponto com biometria</li>
+        <li>📌 <strong>Plataforma de Ads</strong> - Otimização e gerenciamento de anúncios digitais</li>
+    </ul>
+    <button class="btn" onclick="changeSection('contact')">Próximo</button>
+        <button class="btn" onclick="changeSection('courses')">Voltar</button>
+</div>
+
+<!-- Sessão de Contato -->
+<div class="extra-section" id="contact">
+    <h1>📩 Contato</h1>
+    <p>📧 <strong>Email:</strong> cesar.diego@email.com</p>
+    <p>💼 <strong>LinkedIn:</strong> linkedin.com/in/cesardiego</p>
+    <p>🐙 <strong>GitHub:</strong> github.com/cesardiego</p>
+    
+    <button class="btn" onclick="changeSection('intro')">Voltar ao Início</button>
+        <button class="btn" onclick="changeSection('projects')">Voltar</button>
+</div>
+
+
+
+    <script>
+        function changeSection(nextSection) {
+            const sections = document.querySelectorAll('.container, .carousel, .extra-section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            document.getElementById(nextSection).classList.add('active');
+        }
+    </script>
+</body>
+</html>
