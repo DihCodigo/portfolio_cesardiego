@@ -4,250 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #141414;
-            font-family: 'Poppins', sans-serif;
-            overflow: hidden;
-        }
-
-        .container, .carousel, .extra-section {
-            position: absolute;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-            pointer-events: none;
-        }
-
-        .active {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-            pointer-events: all !important;
-        }
-
-        .graphic-designer {
-            font-family: 'Great Vibes', cursive;
-            font-size: 60px;
-            color: #FFD700;
-            text-shadow: 2px 2px 15px rgba(255, 215, 0, 0.5);
-        }
-
-        .portfolio {
-            font-size: 80px;
-            font-weight: 700;
-            text-shadow: 3px 3px 20px rgba(255, 215, 0, 0.3);
-        }
-
-        .username {
-            font-size: 20px;
-            margin-top: 20px;
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .btn {
-            margin-top: 30px;
-            padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-            background-color: #FFD700;
-            color: #141414;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #e6c200;
-        }
-
-        .decorative-elements {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .circle {
-            position: absolute;
-            border: 2px solid #FFD700;
-            border-radius: 50%;
-            opacity: 0.3;
-        }
-
-        .circle.large {
-            width: 400px;
-            height: 400px;
-            top: 5%;
-            left: -10%;
-        }
-
-        .circle.small {
-            width: 200px;
-            height: 200px;
-            bottom: 5%;
-            right: -5%;
-        }
-
-        .star {
-            position: absolute;
-            color: #FFD700;
-            font-size: 20px;
-        }
-
-        .star.one { top: 15%; left: 10%; }
-        .star.two { bottom: 20%; right: 15%; }
-        .star.three { top: 50%; left: 80%; }
-
-        /**/
-        .content {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    width: 80%;
-    max-width: 1200px;
-}
-
-.photo-container img {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
-}
-
-.text-content {
-    max-width: 600px;
-    text-align: left;
-}
-
-.text-content h1 {
-    font-size: 40px;
-    color: #FFD700;
-}
-
-.text-content p {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.text-content span {
-    font-weight: bold;
-    color: #FFD700;
-}
-
-/**/
-
-.extra-section {
-    text-align: center;
-    padding: 40px;
-    background: transparent;
-    border-radius: 20px;
-    width: 80%;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.extra-section h1 {
-    font-size: 35px;
-    color: #FFD700;
-    margin-bottom: 20px;
-}
-
-.extra-section h2 {
-    font-size: 25px;
-    color: #FFD700;
-    margin-top: 20px;
-}
-
-.extra-section p {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 15px;
-}
-
-.extra-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.extra-section li {
-    font-size: 16px;
-    color: #FFF;
-    margin-bottom: 5px;
-}
-
-.btnGroup {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: baseline;
-}
-
-.btn {
-    padding: 12px 50px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    background-color: #FFD700;
-    color: #141414;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
-}
-
-.btn:hover {
-    background-color: #e6c200;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
-}
-
-.btn-back {
-    background: transparent;
-    color: #FFD700;
-    font-size: 22px;
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-
-}
-
-.btn-back:hover {
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
-    background-color: rgba(255, 215, 0, 0.1);
-}
-
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <div class="decorative-elements">
@@ -283,7 +40,11 @@
                 <p>No front-end, utilizo ⚡ React, HTML, CSS e JavaScript, com frameworks como 🎨 Bootstrap para interfaces otimizadas.</p>
                 <p>No back-end, minhas principais tecnologias são 🛠️ PHP e Java, garantindo aplicações escaláveis e eficientes.</p>
                 <p>Apaixonado por desenvolver projetos como 🔐 sistemas de login, 📄 landing pages e 📝 formulários, sempre focado em inovação, usabilidade e alto desempenho.</p>
-                <button class="btn" onclick="changeSection('extra-section')">Experiência Profissional</button>
+                
+                <div class="btnGroup">
+                    <button class="btn-back" onclick="changeSection('intro')">⟵</button>
+                    <button class="btn-back" onclick="changeSection('extra-section')">⟶</button>
+                </div>
             </div>
         </div>
     </div>
@@ -317,53 +78,193 @@
     <!--<button class="btn" onclick="changeSection('intro')">Voltar</button>-->
 
     <div class="btnGroup">
-        <button class="btn-back" onclick="changeSection('extra-section')">⟵</button>
-        <button class="btn" onclick="changeSection('projects')">⟶</button>
+        <button class="btn-back" onclick="changeSection('carousel')">⟵</button>
+        <button class="btn-back" onclick="changeSection('courses')">⟶</button>
     </div>
        
 </div>
 
+
 <!-- Sessão de Cursos -->
 <div class="extra-section" id="courses">
     <h1>📚 Cursos e Certificações</h1>
-    <ul>
-        <li>🔹 Google Ads e AdTech</li>
-        <li>🔹 Desenvolvimento Web Avançado</li>
-        <li>🔹 Banco de Dados Relacionais e NoSQL</li>
-        <li>🔹 Desenvolvimento Mobile com React Native</li>
-    </ul>
+    <p style="color: rgba(255,255,255,0.6); margin-bottom: 30px;">
+        Abaixo estão alguns dos cursos que complementam minha formação, com foco em desenvolvimento web, mobile, análise de dados e AdTech.
+    </p>
+
+    <div class="courses-grid">
+        <div class="course-card">
+            <h2>🎯 Google Tag Manager (GTM)</h2>
+            <p>Configuração de tags, triggers e variáveis para rastreamento avançado.</p>
+        </div>
+        <div class="course-card">
+            <h2>📈 Google Analytics 4 (GA4)</h2>
+            <p>Mensuração de eventos, funis de conversão e relatórios personalizados.</p>
+        </div>
+        <div class="course-card">
+            <h2>📊 Google Ad Manager (GAM)</h2>
+            <p>Gestão e otimização de inventário de anúncios, com foco em performance.</p>
+        </div>
+        <div class="course-card">
+            <h2>💻 JavaScript Moderno</h2>
+            <p>ES6+, DOM, APIs, funções assíncronas e práticas avançadas.</p>
+        </div>
+        <div class="course-card">
+            <h2>⚛️ React e React Native</h2>
+            <p>Criação de interfaces responsivas para web e mobile com hooks e componentes reutilizáveis.</p>
+        </div>
+        <div class="course-card">
+            <h2>🧩 Desenvolvimento Web Avançado</h2>
+            <p>HTML5, CSS3, JS, frameworks e otimização para SEO e performance.</p>
+        </div>
+        <div class="course-card">
+            <h2>🛠️ Banco de Dados Relacionais e NoSQL</h2>
+            <p>Modelagem de dados com MySQL, PostgreSQL e MongoDB.</p>
+        </div>
+        <div class="course-card">
+            <h2>📱 Desenvolvimento Mobile</h2>
+            <p>Criação de apps responsivos com React Native, integração com APIs e animações.</p>
+        </div>
+        <div class="course-card">
+            <h2>🧠 Estratégias de Header Bidding</h2>
+            <p>Implementação com Prebid.js, otimização de lances e integração com GAM.</p>
+        </div>
+
+        <!-- Novos cursos adicionados -->
+        <div class="course-card">
+            <h2>📚 Curso de Desenvolvimento para Android em Java</h2>
+            <p>Criação de aplicativos nativos utilizando Java e Android Studio.</p>
+        </div>
+        <div class="course-card">
+            <h2>🐍 Curso de Python para Web</h2>
+            <p>Desenvolvimento de aplicações web com frameworks como Flask e Django.</p>
+        </div>
+        <div class="course-card">
+            <h2>🚀 Desenvolvimento Ágil com ScriptCase e MySQL</h2>
+            <p>Criação de sistemas e dashboards com ScriptCase e bancos relacionais.</p>
+        </div>
+        <div class="course-card">
+            <h2>🎨 Design para Web</h2>
+            <p>Melhores práticas de layout, usabilidade e experiência do usuário.</p>
+        </div>
+        <div class="course-card">
+            <h2>🧪 Imersão em C# com Visual Studio</h2>
+            <p>Desenvolvimento de sistemas com a linguagem C# e a IDE da Microsoft.</p>
+        </div>
+        <div class="course-card">
+            <h2>🌐 Imersão em PHP com BootStrap</h2>
+            <p>Construção de sites dinâmicos com PHP e aprimoramento visual com BootStrap.</p>
+        </div>
+        <div class="course-card">
+            <h2>🧬 Microsserviços Java com Spring Boot</h2>
+            <p>Criação de microsserviços e APIs com Spring Boot e Spring Cloud.</p>
+        </div>
+        <div class="course-card">
+            <h2>🐍 Programação com Python</h2>
+            <p>Conceitos fundamentais e avançados com foco em automação e análise de dados.</p>
+        </div>
+        <div class="course-card">
+            <h2>🖥️ Linguagem C para Iniciantes</h2>
+            <p>Base essencial para programação embarcada, como projetos com Arduino.</p>
+        </div>
+        <div class="course-card">
+            <h2>⚛️ React + Redux</h2>
+            <p>Fundamentos da arquitetura Redux com React, criando duas aplicações completas.</p>
+        </div>
+    </div>
+
     <div class="btnGroup">
         <button class="btn-back" onclick="changeSection('extra-section')">⟵</button>
-        <button class="btn" onclick="changeSection('projects')">Próximo</button>
+        <button class="btn-back" onclick="changeSection('projects')"> ➝</button>
     </div>
-    
-    
 </div>
 
 <!-- Sessão de Projetos -->
 <div class="extra-section" id="projects">
     <h1>🚀 Projetos Destacados</h1>
-    <ul>
-        <li>📌 <strong>InkyMail</strong> - Editor de E-mails Responsivos</li>
-        <li>📌 <strong>Sistema de Ponto Digital</strong> - Registro de ponto com biometria</li>
-        <li>📌 <strong>Plataforma de Ads</strong> - Otimização e gerenciamento de anúncios digitais</li>
-    </ul>
-    <button class="btn" onclick="changeSection('contact')">Próximo</button>
-        <button class="btn" onclick="changeSection('courses')">Voltar</button>
-</div>
+    <div class="projects-grid">
+      
+      <!-- Projeto 1 -->
+      <div class="project-card">
+        <h2>📌 InkyMail</h2>
+        <p>Editor visual de e-mails responsivos com exportação HTML compatível com Gmail e Outlook.</p>
+        <div class="project-links">
+          <a href="https://demo-inkymail.com" target="_blank" class="btn small">👁️ Ver Demo</a>
+          <a href="https://github.com/seuuser/inkymail" target="_blank" class="btn small">🐙 GitHub</a>
+        </div>
+      </div>
+  
+      <!-- Projeto 2 -->
+      <div class="project-card">
+        <h2>📌 Sistema de Ponto Digital</h2>
+        <p>Solução de registro de ponto com integração biométrica e painel de controle para gestores.</p>
+        <div class="project-links">
+          <a href="https://demo-ponto.com" target="_blank" class="btn small">👁️ Ver Demo</a>
+          <a href="https://github.com/seuuser/sistema-ponto" target="_blank" class="btn small">🐙 GitHub</a>
+        </div>
+      </div>
+  
+      <!-- Projeto 3 -->
+      <div class="project-card">
+        <h2>📌 Plataforma de Ads</h2>
+        <p>Gerenciamento de campanhas, header bidding, relatórios em tempo real e integração com GAM.</p>
+        <div class="project-links">
+          <a href="https://demo-plataformaads.com" target="_blank" class="btn small">👁️ Ver Demo</a>
+          <a href="https://github.com/seuuser/plataforma-ads" target="_blank" class="btn small">🐙 GitHub</a>
+        </div>
+      </div>
+      
+      
+  
+    </div>
+  
+    <div class="btnGroup">
+        <button class="btn-back" onclick="changeSection('courses')">⟵</button>
+        <button class="btn-back" onclick="changeSection('contact')"> ➝</button>
+    </div>
+  </div>
+  
 
 <!-- Sessão de Contato -->
 <div class="extra-section" id="contact">
-    <h1>📩 Contato</h1>
-    <p>📧 <strong>Email:</strong> cesar.diego@email.com</p>
-    <p>💼 <strong>LinkedIn:</strong> linkedin.com/in/cesardiego</p>
-    <p>🐙 <strong>GitHub:</strong> github.com/cesardiego</p>
-    
-    <button class="btn" onclick="changeSection('intro')">Voltar ao Início</button>
-        <button class="btn" onclick="changeSection('projects')">Voltar</button>
-</div>
-
-
+    <div class="contact-container">
+      <h1>📩 Entre em Contato</h1>
+      <p>Se você deseja colaborar, tem alguma dúvida ou apenas quer bater um papo sobre tecnologia, estou à disposição! 😉</p>
+  
+      <div class="contact-info">
+        <p>📧 <strong>Email:</strong> <a href="mailto:iddiegobis@gmail.com">iddiegobis@gmail.com</a></p>
+        <p>💼 <strong>LinkedIn:</strong> <a href="#" id="linkedin-link">Em breve</a></p>
+        <p>📸 <strong>Instagram:</strong> <a href="#" id="instagram-link">Em breve</a></p>
+        <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/dihCodigo" target="_blank">github.com/cesardiego</a></p>
+      </div>
+  
+      <form class="contact-form" action="https://formspree.io/f/xpwpoylz" method="POST">
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu email" required />
+        </div>
+        <textarea name="message" placeholder="Escreva sua mensagem" rows="5" required></textarea>
+  
+        <input type="hidden" name="_subject" value="Nova mensagem pelo site!" />
+        <input type="text" name="_gotcha" style="display:none" />
+  
+        <button class="btn submit-btn" type="submit">📨 Enviar Mensagem</button>
+      </form>
+  
+      <div class="btnGroup">
+        <button class="btn-back" onclick="changeSection('projects')">⟵</button>
+        <button class="btn-back" onclick="changeSection('carousel')">🏁</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5512982211873" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
+    💬
+  </a>
+  
 
     <script>
         function changeSection(nextSection) {
@@ -372,6 +273,8 @@
 
             document.getElementById(nextSection).classList.add('active');
         }
-    </script>
+
+        
+    </script>    
 </body>
 </html>
