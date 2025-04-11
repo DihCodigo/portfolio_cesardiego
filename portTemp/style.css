@@ -35,6 +35,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -72,25 +73,32 @@
   /* ======= HERO SECTION ======= */
   .hero {
     display: flex;
+    justify-content: center;
     height: calc(100vh - 80px);
     background: linear-gradient(to right, var(--color-primary) 65%, var(--color-secondary) 35%);
     position: relative;
   }
   
   .left, .right {
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
     padding: var(--spacing-lg);
     position: relative;
   }
   
   .left h1 {
+    text-align: center;
     font-size: var(--font-size-lg);
     font-weight: bold;
+    width: 100%;
     color: var(--color-highlight);
   }
   
   .left h1 span {
-    display: block;
+    font-size: var(--font-size-lg);
     color: var(--color-white);
   }
   
@@ -106,7 +114,7 @@
     font-size: var(--font-size-sm);
     margin-bottom: var(--spacing-sm);
     color: var(--color-secondary);
-    max-width: 400px;
+    max-width: 500px;
   }
   
   .photo-frame {
@@ -381,12 +389,12 @@
   /* ======= SECTION tecnologias ======= */
   .section-tecnologias {
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #fdfdff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--spacing-lg) 80px;
+    padding: var(--spacing-sm) 80px;
     box-sizing: border-box;
     flex-wrap: wrap;
   }
@@ -394,7 +402,8 @@
   .section-content {
     display: flex;
     justify-content: space-between;
-    gap: var(--spacing-lg);
+    flex-direction: column;
+    gap: var(--spacing-sm);
     width: 100%;
     max-width: 1400px;
     z-index: 1;
@@ -402,6 +411,10 @@
   
   .text-block {
     flex: 1;
+  }
+
+  .tec__{
+    display: flex;
   }
   
   .text-block h2 {
@@ -610,5 +623,62 @@
       height: 80px;
       background-size: 10px 10px;
     }
+  }
+  
+
+  .tec__ {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .tec__image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .tec__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .tec__text {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .tec__text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--color-border);
+    font-weight: 500;
+  }
+  
+  .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .tech-item {
+    text-align: center;
+  }
+  
+  .tech-item img {
+    max-width: 100px;
+  }
+  
+  .tooltip {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--color-text-light);
   }
   
