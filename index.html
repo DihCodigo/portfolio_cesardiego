@@ -1,280 +1,438 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>César Diego - Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+
+    </style>
 </head>
+
 <body>
-    <div class="decorative-elements">
-        <div class="circle large"></div>
-        <div class="circle small"></div>
-        <div class="star one">✦</div>
-        <div class="star two">✦</div>
-        <div class="star three">✦</div>
-    </div>
+    <header class="navbar">
+        <div class="logo">César Diego Anovich</div>
 
-    <!-- Sessão Inicial -->
-    <div class="container active" id="intro">
-        <div class="graphic-designer">Programador Full-Stack</div>
-        <div class="portfolio">PORTFOLIO</div>
-        <div class="username">#CésarDiegoAnovich</div>
-        <button class="btn" onclick="changeSection('carousel')">Entrar</button>
-    </div>
+        <div class="lang">
+            <span>inglês</span>
+            <span>|</span>
+            <span>português</span>
+        </div>
+    </header>
 
-    <!-- Sessão do Portfólio -->
-    <div class="carousel" id="carousel">
-        <div class="content">
-            <!-- Foto do programador -->
-            <div class="photo-container">
-                <img src="./assets/image/diego-removebg-preview.png" alt="César Diego Anovich">
+    <section class="hero">
+        <!-- Botão hamburguer -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menu lateral -->
+        <nav class="side-menu" id="sideMenu">
+            <a href="#">Sobre</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#atividades">Atividades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="left">
+            <h1><span>Full-Stack</span> Developer.</h1>
+            <p>Gosto de criar soluções fullstack escaláveis, com foco em performance, automação e experiências de
+                usuário incríveis — especialmente no ecossistema AdTech e Email Marketing.</p>
+
+            <div class="features">
+                <div>Programador produtivo, sociável e de mente aberta, especializado em AdTech e Performance Web.</div>
+                <div>Experiente no desenvolvimento de sistemas web, otimização de anúncios digitais e implementação de
+                    Header Bidding, GPT e GTM. No front-end, utilizo React, HTML, CSS e JavaScript, com frameworks como
+                    Bootstrap para interfaces otimizadas.</div>
             </div>
 
-            <!-- Texto -->
-            <div class="text-content">
-                <h1>Seja bem vindo,</h1>
-                <p>Meu nome é <span>César Diego Anovich</span></p>
-                <p>Sou um Programador produtivo, sociável e de mente aberta, especializado em 🚀 AdTech e Performance Web.</p>
-                <p>Experiente no desenvolvimento de sistemas web, otimização de anúncios digitais e implementação de 🎯 Header Bidding, GPT, GTM e desenvolvimento de e-mails e-marketing com responsividade Gmail e Outlook. </p>
-                <p>No front-end, utilizo ⚡ React, HTML, CSS e JavaScript, com frameworks como 🎨 Bootstrap para interfaces otimizadas.</p>
-                <p>No back-end, minhas principais tecnologias são 🛠️ PHP e Java, garantindo aplicações escaláveis e eficientes.</p>
-                <p>Apaixonado por desenvolver projetos como 🔐 sistemas de login, 📄 landing pages e 📝 formulários, sempre focado em inovação, usabilidade e alto desempenho.</p>
-                
-                <div class="btnGroup">
-                    <button class="btn-back" onclick="changeSection('intro')">⟵</button>
-                    <button class="btn-back" onclick="changeSection('extra-section')">⟶</button>
+            <div class="dot-grid"></div>
+            <div class="line-curve"></div>
+            <div class="line-step"></div>
+        </div>
+
+        <div class="right">
+            <div class="dot-grid1"></div>
+            <div class="dot-grid2"></div>
+            <div class="photo-frame mirrored" style="background-color: #333;">
+                <img class="mirrored" src="img/diego-removebg-preview.png" alt="Sua Foto" />
+                <div class="photo-border"></div>
+            </div>
+            <div class="dot-grid small right-dots"></div>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="section-tecnologias">
+        <div class="decor decor-top-left"></div>
+        <div class="decor decor-dots-left"></div>
+
+
+        <div class="section-content">
+            <!-- FRONTEND -->
+            <div class="text-block ">
+                <h2>FrontEnd</h2>
+                <h3 style="margin-top: 1rem;">Linguagens & Frameworks</h3>
+
+                <div class="tec__">
+                    <div class="tec__image">
+                        <img src="./img/Programming Customizable Isometric Illustrations _ Amico Style.jpg"
+                            alt="Ilustração de programação">
+                    </div>
+
+                    <div class="tec__text" style="margin: auto;display: flex;justify-content: center;">
+                        <p>
+                            Com uma sólida expertise em <strong>FrontEnd</strong>, transformo ideias em
+                            <strong>interfaces modernas</strong>, <strong>responsivas</strong> e altamente
+                            <strong>interativas</strong>. Domino técnicas que garantem não apenas uma ótima aparência,
+                            mas também uma <strong>experiência fluida</strong> e envolvente para o usuário. Meu foco é
+                            entregar soluções que aliam <strong>performance, usabilidade e estética</strong> em cada
+                            projeto.
+                        </p>
+                    </div>
+
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                                alt="HTML5">
+                            <span class="tooltip">Estrutura páginas web</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                                alt="CSS3">
+                            <span class="tooltip">Estiliza páginas web</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                                alt="JavaScript">
+                            <span class="tooltip">Interatividade no navegador</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+                            <span class="tooltip">Biblioteca moderna do JS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+                                alt="Bootstrap">
+                            <span class="tooltip">Framework CSS popular</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                                alt="Tailwind CSS">
+                            <span class="tooltip">Utilitário CSS moderno</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- BACKEND -->
+                <h2 style="text-align: end;">BackEnd</h2>
+                <p class="intro-paragraph" style="text-align: end;">
+                </p>
+                <h3 class="section-subtitle" style="text-align: end;">Linguagens & Frameworks</h3>
+                <div class="tec__">
+                    <div class="tec__text" style="margin: auto;display: flex;justify-content: center;">
+                        <p>
+                            Quando o assunto é <strong>arquitetura sólida e performance</strong>, é no Back-End que eu
+                            mostro a força. Domino linguagens robustas como <strong>Java</strong> e
+                            <strong>.NET</strong>, atuando em aplicações escaláveis e seguras. Com
+                            <strong>Node.js</strong>, entrego velocidade e flexibilidade. <strong>Python</strong> entra
+                            para scripts inteligentes, automações e APIs eficientes. Tudo isso integrado com bancos como
+                            <strong>MySQL</strong> e <strong>PostgreSQL</strong>, garantindo estrutura de dados
+                            confiável. Seja qual for o desafio por trás da interface, eu construo soluções com lógica
+                            afiada e visão de negócio.
+                        </p>
+                    </div>
+
+                    <div class="tec__image">
+                        <img src="./img/Ilustração do conceito de programador _ Vetor Grátis.jpg"
+                            alt="Ilustração de programação">
+                    </div>
+
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg"
+                                alt="Node.js">
+                            <span class="tooltip">JavaScript no servidor</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_.NET_logo.png"
+                                alt=".NET">
+                            <span class="tooltip">Plataforma da Microsoft</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/3/30/Java_programming_language_logo.svg"
+                                alt="Java">
+                            <span class="tooltip">Robusto e multiplataforma</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                                alt="Python">
+                            <span class="tooltip">Fácil e poderoso</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP">
+                            <span class="tooltip">Popular na web</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Banco de Dados</h2>
+                <h3 style="margin-top: 1rem;">Relacionais</h3>
+
+                <div class="tec__">
+                    <div class="tec__image">
+                        <img src="./img/Ícone do banco de dados_ Símbolo de armazenamento _ Vetor Premium.jpg"
+                            alt="Ilustração de programação">
+                    </div>
+
+                    <div class="tec__text" style="margin: auto;display: flex;justify-content: center;">
+                        <p>
+                            Tenho domínio completo sobre a manipulação e estruturação de dados. Com domínio em comandos
+                            como <strong>SELECT</strong>, <strong>INSERT</strong>, <strong>UPDATE</strong> e
+                            <strong>DELETE</strong>, sou capaz de extrair, inserir, modificar e excluir informações de
+                            forma eficiente e segura. Utilizo <strong>DDL</strong> para projetar estruturas otimizadas
+                            de tabelas, chaves e relacionamentos, e <strong>DML</strong> para manipular os dados com
+                            máxima precisão. Também aplico <strong>views, procedures, functions, índices e
+                                triggers</strong> de forma estratégica para garantir performance e organização.
+                            Independente da complexidade do sistema, garanto consistência, integridade e eficiência na
+                            camada de dados.
+                        </p>
+                    </div>
+
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL">
+                            <span class="tooltip">Banco de dados relacional</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+                                alt="PostgreSQL">
+                            <span class="tooltip">Avançado e confiável</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ANALISE DE DADOS -->
+                <h2 style="text-align: end;">Ferramentas & Análise</h2>
+                <p class="intro-paragraph" style="text-align: end;">
+                </p>
+                <h3 class="section-subtitle" style="text-align: end;"></h3>
+                <div class="tec__">
+                    <div class="tec__text" style="margin: auto;display: flex;justify-content: center;">
+                        <p>
+                            Quando o assunto é <strong>inteligência digital e monetização</strong>, eu jogo em alto
+                            nível. Com o <strong>Google Tag Manager</strong>, gerencio implementações com precisão
+                            cirúrgica — sem depender de código hardcoded. No <strong>Google Analytics 4</strong>,
+                            extraio insights poderosos, traduzindo dados brutos em decisões estratégicas. <strong>Google
+                                Ad Manager</strong>? Orquestro inventário e leilões com eficiência, garantindo máximo
+                            aproveitamento da receita. Sou especialista em campanhas de <strong>Email
+                                Marketing</strong>, da segmentação à automação. E no universo da programática,
+                            <strong>Prebid.js</strong> é meu campo de batalha para otimizar lances e valorizar cada
+                            impressão. Aqui, cada clique e cada tag têm propósito — e eu estou no controle.
+                        </p>
+                    </div>
+
+                    <div class="tec__image">
+                        <img src="./img/Ilustração do conceito de estatísticas do site _ Vetor Grátis.jpg"
+                            alt="Ilustração de programação">
+                    </div>
+
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="./img/Google Tag Manager Logo PNG Vector (SVG) Free Download.jpg" alt="GTM">
+                            <span class="tooltip">Gerenciador de tags do Google</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./img/Google Ad Manager Logo PNG Vector (SVG) Free Download.jpg"
+                                alt="Google Ad Manager">
+                            <span class="tooltip">Gestor de inventário de anúncios</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./img/دوره رایگان آموزش گوگل آنالیتیکس GA4 [ویدئویی].jpg" alt="GA4">
+                            <span class="tooltip">Medição de dados de usuários</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./img/Is Email Marketing Still Profitable_ - Anthem Software.jpg"
+                                alt="Email Marketing">
+                            <span class="tooltip">Campanhas de Email MKT</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./img/prebidaaa.jpg" alt="Prebid.js">
+                            <span class="tooltip">Header Bidding com Prebid.js</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="atividades-section" id="atividades">
+        <div class="decoracao-pontinhos pontinhos-topo"></div>
+        <div class="atividades-container">
+            <h2 class="titulo-azul">O que faço no dia a dia</h2>
+            <div class="atividades-texto">
+                <p>
+                    No meu cotidiano profissional, sou responsável por integrar <strong class="azul">tecnologia,
+                        performance e estratégia</strong> de forma harmônica. Estou à frente da criação de soluções
+                    escaláveis com foco em <strong class="azul">automação, conversão e resultados</strong>, garantindo
+                    experiências digitais ágeis e otimizadas.
+                </p>
+                <p>
+                    Atuo com <strong>AdTech</strong>, implementando estratégias como <strong>Header Bidding</strong> com
+                    Prebid.js, <strong>Google Publisher Tag</strong>, <strong>Google Tag Manager</strong> e
+                    configurações avançadas de <strong class="azul">ad refresh, lazy loading</strong>, <strong>tracking
+                        por S2S</strong> e <strong>eventos de conversão personalizados</strong>.
+                </p>
+                <p>
+                    Também analiso e melhoro métricas de visibilidade, viewability, CTR e outras KPIs importantes para
+                    otimizar a performance de campanhas. Minha atuação garante o equilíbrio entre experiência do usuário
+                    e máxima rentabilidade.
+                </p>
+                <p>
+                    Paralelamente, desenvolvo <strong class="azul">e-mails marketing</strong> responsivos e compatíveis
+                    com plataformas como Gmail e Outlook, utilizando técnicas avançadas para melhorar entregabilidade,
+                    leitura e performance visual. Aplico conceitos de <strong>estratégia de VA</strong> e testes A/B
+                    para potencializar resultados.
+                </p>
+                <p>
+                    No front-end, back-end ou nos bastidores da performance, sou aquele profissional que <strong
+                        class="azul">faz acontecer</strong> — com precisão técnica, visão estratégica e paixão por
+                    inovação.
+                </p>
+            </div>
+        </div>
+        <div class="decoracao-pontinhos pontinhos-base"></div>
+    </section>
+
+
+    <section id="projects" class="section-projects">
+        <div class="decor decor-top-left"></div>
+        <div class="decor decor-dots-left"></div>
+
+        <div class="container">
+            <h2 class="section-title">Alguns dos meus projetos</h2>
+
+            <!-- Front-End -->
+            <h3 class="category-title">🔷 Projetos Front-End</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="frontend1.jpg" alt="Projeto Front-End 1" />
+                    <div class="project-info">
+                        <h3>Landing Page React</h3>
+                        <p>Landing page moderna com React, Tailwind e animações suaves.</p>
+                        <a href="#" class="btn small">Ver Projeto</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="frontend2.jpg" alt="Projeto Front-End 2" />
+                    <div class="project-info">
+                        <h3>Portfólio Pessoal</h3>
+                        <p>Site responsivo com dark mode, animações e layout moderno.</p>
+                        <a href="#" class="btn small">Ver Projeto</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- Back-End -->
+            <h3 class="category-title">🧩 Projetos Back-End</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="backend1.jpg" alt="Projeto Back-End 1" />
+                    <div class="project-info">
+                        <h3>API Node + Mongo</h3>
+                        <p>API RESTful com autenticação JWT e integração com MongoDB.</p>
+                        <a href="#" class="btn small">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banco de Dados -->
+            <h3 class="category-title">💾 Banco de Dados</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="bd1.jpg" alt="Projeto BD 1" />
+                    <div class="project-info">
+                        <h3>CRUD com MySQL</h3>
+                        <p>Sistema de gerenciamento de usuários com interface simples.</p>
+                        <a href="#" class="btn small">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-mail Marketing -->
+            <h3 class="category-title">✉️ E-mail Marketing</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="email1.jpg" alt="Projeto Email 1" />
+                    <div class="project-info">
+                        <h3>Templates Responsivos</h3>
+                        <p>Criação de e-mails compatíveis com Gmail e Outlook usando tabelas e media queries.</p>
+                        <a href="#" class="btn small">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GTM & AdManager -->
+            <h3 class="category-title">📈 GTM & AdManager</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="gtm1.jpg" alt="Projeto GTM 1" />
+                    <div class="project-info">
+                        <h3>Setup GAM + Header Bidding</h3>
+                        <p>Estruturação de anúncios com Prebid.js e Google Tag Manager para otimização de receita.</p>
+                        <a href="#" class="btn small">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2 class="section-title">Entre em contato</h2>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" required />
+                        <label>Nome</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" required />
+                        <label>Email</label>
+                    </div>
+                </div>
+
+                <div class="form-group full">
+                    <textarea name="message" rows="6" required></textarea>
+                    <label>Mensagem</label>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <span>Enviar</span>
+                </button>
+            </form>
+        </div>
+    </section>
 
 
-    <!-- Sessão Extra -->
-<div class="extra-section" id="extra-section">
-    <h1>💼 Experiência Profissional</h1>
-    
-    <p>Possuo sólida experiência no desenvolvimento de sistemas web eficientes e otimizados, com foco em AdTech e Performance Web.</p>
-    <p>Sou especializado em ferramentas como Google Tag Manager (GTM) e Google Ad Manager (GAM), com ampla atuação na aplicação e otimização de códigos de Header Bidding, incluindo implementações de Lazy Loading, Ad Refresh e configurações para rastreamento de conversões, entre outras estratégias avançadas.</p>
-    <p>Além disso, possuo expertise no desenvolvimento de e-mails para e-marketing, garantindo compatibilidade total com Gmail, Outlook e outros clientes de e-mail, aplicando técnicas avançadas de responsividade e otimização para diferentes plataformas.</p>
 
-    <div class="skills">
-        <h2>🖥️ Front-End</h2>
-        <p> 
-            🌍 <strong>HTML5</strong> | 🎨 <strong>CSS3</strong> | ⚡ <strong>JavaScript</strong> | ⚛️ <strong>React</strong> | 📱 <strong>React Native</strong> | 🌪️ <strong>Tailwind</strong> | 📏 <strong>Bootstrap</strong>
-        </p>
-
-        <h2>⚙️ Back-End</h2>
-        <p> 
-            🛠️ <strong>PHP</strong> | ☕ <strong>Java</strong> | 🌍 <strong>JavaScript</strong> | ⚛️ <strong>React</strong> | 📱 <strong>React Native</strong> | 🌍 <strong>Node.js</strong> | 🍃 <strong>Spring</strong>
-        </p>
-
-        <h2>🗄️ Banco de Dados</h2>
-        <p> 
-            🗃️ <strong>MySQL</strong> | 🏛️ <strong>PostgreSQL</strong>
-        </p>
-    </div>
-
-    <!--<button class="btn" onclick="changeSection('intro')">Voltar</button>-->
-
-    <div class="btnGroup">
-        <button class="btn-back" onclick="changeSection('carousel')">⟵</button>
-        <button class="btn-back" onclick="changeSection('courses')">⟶</button>
-    </div>
-       
-</div>
+    <a href="https://wa.me/12982211873" class="whatsapp-float" target="_blank" aria-label="Fale comigo no WhatsApp">
+        <i class="icon-whatsapp">📱</i>
+    </a>
 
 
-<!-- Sessão de Cursos -->
-<div class="extra-section" id="courses">
-    <h1>📚 Cursos e Certificações</h1>
-    <p style="color: rgba(255,255,255,0.6); margin-bottom: 30px;">
-        Abaixo estão alguns dos cursos que complementam minha formação em Analise e Desenvolvimento de Sistemas, com foco em desenvolvimento web, mobile, análise de dados e AdTech.
-    </p>
-
-    <div class="courses-grid">
-        <div class="course-card">
-            <h2>🎯 Google Tag Manager (GTM)</h2>
-            <p>Configuração de tags, triggers e variáveis para rastreamento avançado.</p>
-        </div>
-        <div class="course-card">
-            <h2>📈 Google Analytics 4 (GA4)</h2>
-            <p>Mensuração de eventos, funis de conversão e relatórios personalizados.</p>
-        </div>
-        <div class="course-card">
-            <h2>📊 Google Ad Manager (GAM)</h2>
-            <p>Gestão e otimização de inventário de anúncios, com foco em performance.</p>
-        </div>
-        <div class="course-card">
-            <h2>💻 JavaScript Moderno</h2>
-            <p>ES6+, DOM, APIs, funções assíncronas e práticas avançadas.</p>
-        </div>
-        <div class="course-card">
-            <h2>⚛️ React e React Native</h2>
-            <p>Criação de interfaces responsivas para web e mobile com hooks e componentes reutilizáveis.</p>
-        </div>
-        <div class="course-card">
-            <h2>🧩 Desenvolvimento Web Avançado</h2>
-            <p>HTML5, CSS3, JS, frameworks e otimização para SEO e performance.</p>
-        </div>
-        <div class="course-card">
-            <h2>🛠️ Banco de Dados Relacionais e NoSQL</h2>
-            <p>Modelagem de dados com MySQL, PostgreSQL e MongoDB.</p>
-        </div>
-        <div class="course-card">
-            <h2>📱 Desenvolvimento Mobile</h2>
-            <p>Criação de apps responsivos com React Native, integração com APIs e animações.</p>
-        </div>
-        <div class="course-card">
-            <h2>🧠 Estratégias de Header Bidding</h2>
-            <p>Implementação com Prebid.js, otimização de lances e integração com GAM.</p>
-        </div>
-
-        <!-- Novos cursos adicionados -->
-        <div class="course-card">
-            <h2>📚 Curso de Desenvolvimento para Android em Java</h2>
-            <p>Criação de aplicativos nativos utilizando Java e Android Studio.</p>
-        </div>
-        <div class="course-card">
-            <h2>🐍 Curso de Python para Web</h2>
-            <p>Desenvolvimento de aplicações web com frameworks como Flask e Django.</p>
-        </div>
-        <div class="course-card">
-            <h2>🚀 Desenvolvimento Ágil com ScriptCase e MySQL</h2>
-            <p>Criação de sistemas e dashboards com ScriptCase e bancos relacionais.</p>
-        </div>
-        <div class="course-card">
-            <h2>🎨 Design para Web</h2>
-            <p>Melhores práticas de layout, usabilidade e experiência do usuário.</p>
-        </div>
-        <div class="course-card">
-            <h2>🧪 Imersão em C# com Visual Studio</h2>
-            <p>Desenvolvimento de sistemas com a linguagem C# e a IDE da Microsoft.</p>
-        </div>
-        <div class="course-card">
-            <h2>🌐 Imersão em PHP com BootStrap</h2>
-            <p>Construção de sites dinâmicos com PHP e aprimoramento visual com BootStrap.</p>
-        </div>
-        <div class="course-card">
-            <h2>🧬 Microsserviços Java com Spring Boot</h2>
-            <p>Criação de microsserviços e APIs com Spring Boot e Spring Cloud.</p>
-        </div>
-        <div class="course-card">
-            <h2>🐍 Programação com Python</h2>
-            <p>Conceitos fundamentais e avançados com foco em automação e análise de dados.</p>
-        </div>
-        <div class="course-card">
-            <h2>🖥️ Linguagem C para Iniciantes</h2>
-            <p>Base essencial para programação embarcada, como projetos com Arduino.</p>
-        </div>
-        <div class="course-card">
-            <h2>⚛️ React + Redux</h2>
-            <p>Fundamentos da arquitetura Redux com React, criando duas aplicações completas.</p>
-        </div>
-    </div>
-
-    <div class="btnGroup">
-        <button class="btn-back" onclick="changeSection('extra-section')">⟵</button>
-        <button class="btn-back" onclick="changeSection('projects')"> ➝</button>
-    </div>
-</div>
-
-<!-- Sessão de Projetos -->
-<div class="extra-section" id="projects">
-    <h1>🚀 Projetos Destacados</h1>
-    <div class="projects-grid">
-      
-      <!-- Projeto 1 -->
-      <div class="project-card">
-        <h2>📌 InkyMail</h2>
-        <p>Editor visual de e-mails responsivos com exportação HTML compatível com Gmail e Outlook.</p>
-        <div class="project-links">
-          <a href="https://demo-inkymail.com" target="_blank" class="btn small">👁️ Ver Demo</a>
-          <a href="https://github.com/seuuser/inkymail" target="_blank" class="btn small">🐙 GitHub</a>
-        </div>
-      </div>
-  
-      <!-- Projeto 2 -->
-      <div class="project-card">
-        <h2>📌 Sistema de Ponto Digital</h2>
-        <p>Solução de registro de ponto com integração biométrica e painel de controle para gestores.</p>
-        <div class="project-links">
-          <a href="https://demo-ponto.com" target="_blank" class="btn small">👁️ Ver Demo</a>
-          <a href="https://github.com/seuuser/sistema-ponto" target="_blank" class="btn small">🐙 GitHub</a>
-        </div>
-      </div>
-  
-      <!-- Projeto 3 -->
-      <div class="project-card">
-        <h2>📌 Plataforma de Ads</h2>
-        <p>Gerenciamento de campanhas, header bidding, relatórios em tempo real e integração com GAM.</p>
-        <div class="project-links">
-          <a href="https://demo-plataformaads.com" target="_blank" class="btn small">👁️ Ver Demo</a>
-          <a href="https://github.com/seuuser/plataforma-ads" target="_blank" class="btn small">🐙 GitHub</a>
-        </div>
-      </div>
-      
-      
-  
-    </div>
-  
-    <div class="btnGroup">
-        <button class="btn-back" onclick="changeSection('courses')">⟵</button>
-        <button class="btn-back" onclick="changeSection('contact')"> ➝</button>
-    </div>
-  </div>
-  
-
-<!-- Sessão de Contato -->
-<div class="extra-section" id="contact">
-    <div class="contact-container">
-      <h1>📩 Entre em Contato</h1>
-      <p>Se você deseja colaborar, tem alguma dúvida ou apenas quer bater um papo sobre tecnologia, estou à disposição! 😉</p>
-  
-      <div class="contact-info">
-        <p>📧 <strong>Email:</strong> <a href="mailto:iddiegobis@gmail.com">iddiegobis@gmail.com</a></p>
-        <p>💼 <strong>LinkedIn:</strong> <a href="#" id="linkedin-link">Em breve</a></p>
-        <p>📸 <strong>Instagram:</strong> <a href="#" id="instagram-link">Em breve</a></p>
-        <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/dihCodigo" target="_blank">github.com/cesardiego</a></p>
-      </div>
-  
-      <form class="contact-form" action="https://formspree.io/f/xpwpoylz" method="POST">
-        <div class="input-group">
-          <input type="text" name="name" placeholder="Seu nome" required />
-          <input type="email" name="email" placeholder="Seu email" required />
-        </div>
-        <textarea name="message" placeholder="Escreva sua mensagem" rows="5" required></textarea>
-  
-        <input type="hidden" name="_subject" value="Nova mensagem pelo site!" />
-        <input type="text" name="_gotcha" style="display:none" />
-  
-        <button class="btn submit-btn" type="submit">📨 Enviar Mensagem</button>
-      </form>
-  
-      <div class="btnGroup">
-        <button class="btn-back" onclick="changeSection('projects')">⟵</button>
-        <button class="btn-back" onclick="changeSection('carousel')">🏁</button>
-      </div>
-    </div>
-  </div>
-  
-  
-  
-  <!-- Botão Flutuante WhatsApp -->
-  <a href="https://wa.me/5512982211873" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
-    💬
-  </a>
-  
-
-    <script>
-        function changeSection(nextSection) {
-            const sections = document.querySelectorAll('.container, .carousel, .extra-section');
-            sections.forEach(section => section.classList.remove('active'));
-
-            document.getElementById(nextSection).classList.add('active');
-        }
-
-        
-    </script>    
+    <script src="./script.js"></script>
 </body>
+
 </html>
