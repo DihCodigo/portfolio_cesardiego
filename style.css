@@ -701,6 +701,8 @@ body {
 
 .section-projects {
   position: relative;
+  max-width: 960px;
+  margin: auto;
   background-color: var(--color-bg-light);
   padding: 80px 20px;
   color: var(--color-white);
@@ -720,8 +722,8 @@ body {
 }
 
 .project-card {
-  background-color: var(--color-dark-bg);
-  border: 1px solid #ffd70030;
+  background-color: var(--color-text-dark);
+  border: none;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
