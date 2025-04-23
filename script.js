@@ -6,3 +6,11 @@ menuToggle.addEventListener('click', () => {
   sideMenu.classList.toggle('active');
 });
 
+function changeLanguage(lang) {
+  const elements = document.querySelectorAll('[data-pt]');
+  elements.forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+}
+
+

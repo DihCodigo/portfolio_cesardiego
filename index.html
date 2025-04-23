@@ -17,9 +17,9 @@
         <div class="logo">César Diego Anovich</div>
 
         <div class="lang">
-            <span>inglês</span>
+            <span style="cursor: pointer;" onclick="changeLanguage('en')">English</span>
             <span>|</span>
-            <span>português</span>
+            <span style="cursor: pointer;" onclick="changeLanguage('pt')">Português</span>
         </div>
     </header>
 
@@ -41,15 +41,28 @@
         </nav>
 
         <div class="left">
-            <h1><span>Full-Stack</span> Developer.</h1>
-            <p>Gosto de criar soluções fullstack escaláveis, com foco em performance, automação e experiências de
-                usuário incríveis — especialmente no ecossistema AdTech e Email Marketing.</p>
+            <h1>
+                <span data-pt="Full-Stack" data-en="Full-Stack">Full-Stack</span>
+                <span style="color: #5ef7de;" data-pt="Desenvolvedor." data-en="Developer.">Desenvolvedor.</span>
+            </h1>
+
+            <p data-pt="Gosto de criar soluções fullstack escaláveis, com foco em performance, automação e experiências de usuário incríveis — especialmente no ecossistema AdTech e Email Marketing."
+                data-en="I enjoy building scalable fullstack solutions focused on performance, automation, and amazing user experiences — especially in the AdTech and Email Marketing ecosystem.">
+                Gosto de criar soluções fullstack escaláveis, com foco em performance, automação e experiências de
+                usuário incríveis — especialmente no ecossistema AdTech e Email Marketing.
+            </p>
 
             <div class="features">
-                <div>Programador produtivo, sociável e de mente aberta, especializado em AdTech e Performance Web.</div>
-                <div>Experiente no desenvolvimento de sistemas web, otimização de anúncios digitais e implementação de
+                <div data-pt="Programador produtivo, sociável e de mente aberta, especializado em AdTech e Performance Web."
+                    data-en="Productive, sociable, and open-minded programmer, specialized in AdTech and Web Performance.">
+                    Programador produtivo, sociável e de mente aberta, especializado em AdTech e Performance Web.
+                </div>
+                <div data-pt="Experiente no desenvolvimento de sistemas web, otimização de anúncios digitais e implementação de Header Bidding, GPT e GTM. No front-end, utilizo React, HTML, CSS e JavaScript, com frameworks como Bootstrap para interfaces otimizadas."
+                    data-en="Experienced in web systems development, digital ad optimization, and implementing Header Bidding, GPT, and GTM. On the front-end, I use React, HTML, CSS, and JavaScript, with frameworks like Bootstrap for optimized interfaces.">
+                    Experiente no desenvolvimento de sistemas web, otimização de anúncios digitais e implementação de
                     Header Bidding, GPT e GTM. No front-end, utilizo React, HTML, CSS e JavaScript, com frameworks como
-                    Bootstrap para interfaces otimizadas.</div>
+                    Bootstrap para interfaces otimizadas.
+                </div>
             </div>
 
             <div class="dot-grid"></div>
@@ -77,7 +90,9 @@
             <!-- FRONTEND -->
             <div class="text-block ">
                 <h2>FrontEnd</h2>
-                <h3 style="margin-top: 1rem;">Linguagens & Frameworks</h3>
+                <h3 style="margin-top: 1rem;" data-pt="Linguagens & Frameworks" data-en="Languages & Frameworks">
+                    Linguagens & Frameworks
+                </h3>
 
                 <div class="tec__">
                     <div class="tec__image">
@@ -85,9 +100,10 @@
                             alt="Ilustração de programação">
                     </div>
 
-                    <div class="tec__text" style="margin: auto;display: flex;justify-content: center;">
-                        <p>
-                            Com uma sólida expertise em <strong>FrontEnd</strong>, transformo ideias em
+                    <div class="tec__text" style="margin: auto; display: flex; justify-content: center;">
+                        <p data-pt="Com uma sólida experiência em FrontEnd, transformo ideias em interfaces modernas, responsivas e altamente interativas. Domino técnicas que garantem não apenas uma ótima aparência, mas também uma experiência fluida e envolvente para o usuário. Meu foco é entregar soluções que aliam performance, usabilidade e estética em cada projeto."
+                            data-en="With solid expertise in FrontEnd, I transform ideas into modern, responsive, and highly interactive interfaces. I master techniques that ensure not only great appearance but also a fluid and engaging user experience. My focus is to deliver solutions that combine performance, usability, and aesthetics in every project.">
+                            Com uma sólida experiência em <strong>FrontEnd</strong>, transformo ideias em
                             <strong>interfaces modernas</strong>, <strong>responsivas</strong> e altamente
                             <strong>interativas</strong>. Domino técnicas que garantem não apenas uma ótima aparência,
                             mas também uma <strong>experiência fluida</strong> e envolvente para o usuário. Meu foco é
@@ -100,49 +116,65 @@
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
                                 alt="HTML5">
-                            <span class="tooltip">Estrutura páginas web</span>
+                            <span class="tooltip" data-pt="Estrutura páginas web" data-en="Structures web pages">
+                                Estrutura páginas web
+                            </span>
                         </div>
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
                                 alt="CSS3">
-                            <span class="tooltip">Estiliza páginas web</span>
+                            <span class="tooltip" data-pt="Estiliza páginas web" data-en="Styles web pages">
+                                Estiliza páginas web
+                            </span>
                         </div>
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
                                 alt="JavaScript">
-                            <span class="tooltip">Interatividade no navegador</span>
+                            <span class="tooltip" data-pt="Interatividade no navegador"
+                                data-en="Interactivity in the browser">
+                                Interatividade no navegador
+                            </span>
                         </div>
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
-                            <span class="tooltip">Biblioteca moderna do JS</span>
+                            <span class="tooltip" data-pt="Biblioteca moderna do JS" data-en="Modern JS library">
+                                Biblioteca moderna do JS
+                            </span>
                         </div>
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
                                 alt="Bootstrap">
-                            <span class="tooltip">Framework CSS popular</span>
+                            <span class="tooltip" data-pt="Framework CSS popular" data-en="Popular CSS framework">
+                                Framework CSS popular
+                            </span>
                         </div>
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
                                 alt="Tailwind CSS">
-                            <span class="tooltip">Utilitário CSS moderno</span>
+                            <span class="tooltip" data-pt="Utilitário CSS moderno" data-en="Modern CSS utility">
+                                Utilitário CSS moderno
+                            </span>
                         </div>
                     </div>
                 </div>
-
 
                 <!-- BACKEND -->
                 <h2 style="text-align: end;">BackEnd</h2>
                 <p class="intro-paragraph" style="text-align: end;">
                 </p>
-                <h3 class="section-subtitle" style="text-align: end;">Linguagens & Frameworks</h3>
+                <h3 class="section-subtitle" style="text-align: end;" data-pt="Linguagens & Frameworks"
+                    data-en="Languages & Frameworks">
+                    Linguagens & Frameworks
+                </h3>
                 <div class="tec__">
                     <div class="tec__text" style="margin: auto;display: flex;justify-content: center;">
-                        <p>
+                        <p data-pt="Quando o assunto é arquitetura sólida e performance, é no Back-End que eu mostro qualidade. Domino linguagens robustas como Java e .NET, atuando em aplicações escaláveis e seguras. Com Node.js, entrego velocidade e flexibilidade. PHP entra para code inteligentes, automações e APIs eficientes. Tudo isso integrado com bancos como MySQL e PostgreSQL, garantindo estrutura de dados confiável. Seja qual for o desafio por trás da interface, eu construo soluções com lógica afiada e visão de negócio."
+                            data-en="When it comes to solid architecture and performance, this is where I show quality. I dominate robust languages like Java and .NET, working on scalable and secure applications. With Node.js, I deliver speed and flexibility. PHP is used for smart code, automation, and efficient APIs. All of this is integrated with databases like MySQL and PostgreSQL, ensuring reliable data structure. No matter the challenge behind the interface, I build solutions with sharp logic and a business mindset.">
                             Quando o assunto é <strong>arquitetura sólida e performance</strong>, é no Back-End que eu
                             mostro a força. Domino linguagens robustas como <strong>Java</strong> e
                             <strong>.NET</strong>, atuando em aplicações escaláveis e seguras. Com
-                            <strong>Node.js</strong>, entrego velocidade e flexibilidade. <strong>Python</strong> entra
-                            para scripts inteligentes, automações e APIs eficientes. Tudo isso integrado com bancos como
+                            <strong>Node.js</strong>, entrego velocidade e flexibilidade. <strong>PHP</strong> entra
+                            para codigos inteligentes, automações e APIs eficientes. Tudo isso integrado com bancos como
                             <strong>MySQL</strong> e <strong>PostgreSQL</strong>, garantindo estrutura de dados
                             confiável. Seja qual for o desafio por trás da interface, eu construo soluções com lógica
                             afiada e visão de negócio.
@@ -158,32 +190,31 @@
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg"
                                 alt="Node.js">
-                            <span class="tooltip">JavaScript no servidor</span>
+                            <span class="tooltip" data-pt="JavaScript no servidor"
+                                data-en="JavaScript on the server">JavaScript no servidor</span>
                         </div>
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_.NET_logo.png"
                                 alt=".NET">
-                            <span class="tooltip">Plataforma da Microsoft</span>
+                            <span class="tooltip" data-pt="Plataforma da Microsoft"
+                                data-en="Microsoft platform">Plataforma da Microsoft</span>
                         </div>
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/pt/3/30/Java_programming_language_logo.svg"
                                 alt="Java">
-                            <span class="tooltip">Robusto e multiplataforma</span>
-                        </div>
-                        <div class="tech-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                                alt="Python">
-                            <span class="tooltip">Fácil e poderoso</span>
+                            <span class="tooltip" data-pt="Robusto e multiplataforma"
+                                data-en="Robust and cross-platform">Robusto e multiplataforma</span>
                         </div>
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP">
-                            <span class="tooltip">Popular na web</span>
+                            <span class="tooltip" data-pt="Popular na web" data-en="Popular on the web">Popular na
+                                web</span>
                         </div>
                     </div>
                 </div>
 
-                <h2>Banco de Dados</h2>
-                <h3 style="margin-top: 1rem;">Relacionais</h3>
+                <h2 data-pt="Banco de Dados" data-en="Database">Banco de Dados</h2>
+                <h3 style="margin-top: 1rem;" data-pt="Relacionais" data-en="Relational">Relacionais</h3>
 
                 <div class="tec__">
                     <div class="tec__image">
@@ -192,7 +223,8 @@
                     </div>
 
                     <div class="tec__text" style="margin: auto;display: flex;justify-content: center;">
-                        <p>
+                        <p data-pt="Tenho domínio completo sobre a manipulação e estruturação de dados. Com domínio em comandos como SELECT, INSERT, UPDATE e DELETE, sou capaz de extrair, inserir, modificar e excluir informações de forma eficiente e segura. Utilizo DDL para projetar estruturas otimizadas de tabelas, chaves e relacionamentos, e DML para manipular os dados com máxima precisão. Também aplico views, procedures, functions, índices e triggers de forma estratégica para garantir performance e organização. Independente da complexidade do sistema, garanto consistência, integridade e eficiência na camada de dados."
+                            data-en="I have complete mastery of data manipulation and structuring. With expertise in commands like SELECT, INSERT, UPDATE, and DELETE, I can extract, insert, modify, and delete information efficiently and securely. I use DDL to design optimized structures for tables, keys, and relationships, and DML to manipulate data with maximum precision. I also strategically apply views, procedures, functions, indexes, and triggers to ensure performance and organization. Regardless of the complexity of the system, I ensure consistency, integrity, and efficiency at the data layer.">
                             Tenho domínio completo sobre a manipulação e estruturação de dados. Com domínio em comandos
                             como <strong>SELECT</strong>, <strong>INSERT</strong>, <strong>UPDATE</strong> e
                             <strong>DELETE</strong>, sou capaz de extrair, inserir, modificar e excluir informações de
@@ -208,25 +240,29 @@
                     <div class="tech-grid">
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL">
-                            <span class="tooltip">Banco de dados relacional</span>
+                            <span class="tooltip" data-pt="Banco de dados relacional"
+                                data-en="Relational database">Banco de dados relacional</span>
                         </div>
                         <div class="tech-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
                                 alt="PostgreSQL">
-                            <span class="tooltip">Avançado e confiável</span>
+                            <span class="tooltip" data-pt="Avançado e confiável"
+                                data-en="Advanced and reliable">Avançado e confiável</span>
                         </div>
                     </div>
                 </div>
 
 
                 <!-- ANALISE DE DADOS -->
-                <h2 style="text-align: end;">Ferramentas & Análise</h2>
+                <h2 style="text-align: end;" data-pt="Ferramentas & Análise" data-en="Tools & Analysis">Ferramentas &
+                    Análise</h2>
                 <p class="intro-paragraph" style="text-align: end;">
                 </p>
                 <h3 class="section-subtitle" style="text-align: end;"></h3>
                 <div class="tec__">
-                    <div class="tec__text" style="margin: auto;display: flex;justify-content: center;">
-                        <p>
+                    <div class="tec__text" style="margin: auto; display: flex; justify-content: center;">
+                        <p data-pt="Quando o assunto é inteligência digital e monetização, eu jogo em alto nível. Com o Google Tag Manager, gerencio implementações com precisão cirúrgica — sem depender de código hardcoded. No Google Analytics 4, extraio insights poderosos, traduzindo dados brutos em decisões estratégicas. Google Ad Manager? Orquestro inventário e leilões com eficiência, garantindo máximo aproveitamento da receita. Sou especialista em campanhas de Email Marketing, da segmentação à automação. E no universo da programática, Prebid.js é meu campo de batalha para otimizar lances e valorizar cada impressão. Aqui, cada clique e cada tag têm propósito — e eu estou no controle."
+                            data-en="When it comes to digital intelligence and monetization, I play at a high level. With Google Tag Manager, I manage implementations with surgical precision — without relying on hardcoded code. In Google Analytics 4, I extract powerful insights, translating raw data into strategic decisions. Google Ad Manager? I orchestrate inventory and auctions efficiently, ensuring maximum revenue utilization. I'm an expert in Email Marketing campaigns, from segmentation to automation. And in the programmatic universe, Prebid.js is my battlefield to optimize bids and maximize each impression. Here, every click and every tag have a purpose — and I'm in control.">
                             Quando o assunto é <strong>inteligência digital e monetização</strong>, eu jogo em alto
                             nível. Com o <strong>Google Tag Manager</strong>, gerencio implementações com precisão
                             cirúrgica — sem depender de código hardcoded. No <strong>Google Analytics 4</strong>,
@@ -239,6 +275,7 @@
                         </p>
                     </div>
 
+
                     <div class="tec__image">
                         <img src="./img/Ilustração do conceito de estatísticas do site _ Vetor Grátis.jpg"
                             alt="Ilustração de programação">
@@ -247,69 +284,78 @@
                     <div class="tech-grid">
                         <div class="tech-item">
                             <img src="./img/Google Tag Manager Logo PNG Vector (SVG) Free Download.jpg" alt="GTM">
-                            <span class="tooltip">Gerenciador de tags do Google</span>
+                            <span class="tooltip" data-pt="O Gerenciador de Tags do Google."
+                                data-en="Google Tag Manager">Gerenciador de tags do Google</span>
                         </div>
                         <div class="tech-item">
                             <img src="./img/Google Ad Manager Logo PNG Vector (SVG) Free Download.jpg"
                                 alt="Google Ad Manager">
-                            <span class="tooltip">Gestor de inventário de anúncios</span>
+                            <span class="tooltip" data-pt="Gestor de inventário de anúncios"
+                                data-en="Ad inventory manager">Gestor de inventário de anúncios</span>
                         </div>
                         <div class="tech-item">
                             <img src="./img/دوره رایگان آموزش گوگل آنالیتیکس GA4 [ویدئویی].jpg" alt="GA4">
-                            <span class="tooltip">Medição de dados de usuários</span>
+                            <span class="tooltip" data-pt="Medição de dados de usuários"
+                                data-en="User data measurement">Medição de dados de usuários</span>
                         </div>
                         <div class="tech-item">
                             <img src="./img/Is Email Marketing Still Profitable_ - Anthem Software.jpg"
                                 alt="Email Marketing">
-                            <span class="tooltip">Campanhas de Email MKT</span>
+                            <span class="tooltip" data-pt="Campanhas de Email MKT"
+                                data-en="Email Marketing Campaigns">Campanhas de Email MKT</span>
                         </div>
                         <div class="tech-item">
                             <img src="./img/prebidaaa.jpg" alt="Prebid.js">
-                            <span class="tooltip">Header Bidding com Prebid.js</span>
+                            <span class="tooltip" data-pt="Header Bidding com Prebid.js"
+                                data-en="Header Bidding with Prebid.js">Header Bidding com Prebid.js</span>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
-
     </section>
 
     <section class="atividades-section" id="atividades">
         <div class="decoracao-pontinhos pontinhos-topo"></div>
         <div class="atividades-container">
-            <h2 class="titulo-azul">O que faço no dia a dia</h2>
+            <h2 class="titulo-azul" data-pt="O que faço no dia a dia" data-en="What I do daily">O que faço no dia a dia
+            </h2>
             <div class="atividades-texto">
-                <p>
+                <p data-pt="No meu cotidiano profissional, sou responsável por integrar tecnologia, performance e estratégia de forma harmônica. Estou à frente da criação de soluções escaláveis com foco em automação, conversão e resultados, garantindo experiências digitais ágeis e otimizadas."
+                    data-en="In my daily professional life, I am responsible for integrating technology, performance, and strategy in a harmonious way. I lead the creation of scalable solutions focused on automation, conversion, and results, ensuring agile and optimized digital experiences.">
                     No meu cotidiano profissional, sou responsável por integrar <strong class="azul">tecnologia,
                         performance e estratégia</strong> de forma harmônica. Estou à frente da criação de soluções
                     escaláveis com foco em <strong class="azul">automação, conversão e resultados</strong>, garantindo
                     experiências digitais ágeis e otimizadas.
                 </p>
-                <p>
+                <p data-pt="Atuo com AdTech, implementando estratégias como Header Bidding com Prebid.js, Google Publisher Tag, Google Tag Manager e configurações avançadas de ad refresh, lazy loading, tracking por S2S e eventos de conversão personalizados."
+                    data-en="I work with AdTech, implementing strategies such as Header Bidding with Prebid.js, Google Publisher Tag, Google Tag Manager, and advanced configurations of ad refresh, lazy loading, S2S tracking, and custom conversion events.">
                     Atuo com <strong>AdTech</strong>, implementando estratégias como <strong>Header Bidding</strong> com
                     Prebid.js, <strong>Google Publisher Tag</strong>, <strong>Google Tag Manager</strong> e
                     configurações avançadas de <strong class="azul">ad refresh, lazy loading</strong>, <strong>tracking
                         por S2S</strong> e <strong>eventos de conversão personalizados</strong>.
                 </p>
-                <p>
+                <p data-pt="Também analiso e melhoro métricas de visibilidade, viewability, CTR e outras KPIs importantes para otimizar a performance de campanhas. Minha atuação garante o equilíbrio entre experiência do usuário e máxima rentabilidade."
+                    data-en="I also analyze and improve metrics such as visibility, viewability, CTR, and other important KPIs to optimize campaign performance. My work ensures a balance between user experience and maximum profitability.">
                     Também analiso e melhoro métricas de visibilidade, viewability, CTR e outras KPIs importantes para
                     otimizar a performance de campanhas. Minha atuação garante o equilíbrio entre experiência do usuário
                     e máxima rentabilidade.
                 </p>
-                <p>
+                <p data-pt="Paralelamente, desenvolvo e-mails marketing responsivos e compatíveis com plataformas como Gmail e Outlook, utilizando técnicas avançadas para melhorar entregabilidade, leitura e performance visual. Aplico conceitos de estratégia de VA e testes A/B para potencializar resultados."
+                    data-en="In parallel, I develop responsive email marketing compatible with platforms like Gmail and Outlook, using advanced techniques to improve deliverability, readability, and visual performance. I apply VA strategy concepts and A/B testing to boost results.">
                     Paralelamente, desenvolvo <strong class="azul">e-mails marketing</strong> responsivos e compatíveis
                     com plataformas como Gmail e Outlook, utilizando técnicas avançadas para melhorar entregabilidade,
                     leitura e performance visual. Aplico conceitos de <strong>estratégia de VA</strong> e testes A/B
                     para potencializar resultados.
                 </p>
-                <p>
+                <p data-pt="No front-end, back-end ou nos bastidores da performance, sou aquele profissional que faz acontecer — com precisão técnica, visão estratégica e paixão por inovação."
+                    data-en="In front-end, back-end, or behind the scenes of performance, I am the professional who makes things happen — with technical precision, strategic vision, and a passion for innovation.">
                     No front-end, back-end ou nos bastidores da performance, sou aquele profissional que <strong
                         class="azul">faz acontecer</strong> — com precisão técnica, visão estratégica e paixão por
                     inovação.
                 </p>
             </div>
+
         </div>
         <div class="decoracao-pontinhos pontinhos-base"></div>
     </section>
@@ -320,26 +366,34 @@
         <div class="decor decor-dots-left"></div>
 
         <div class="container">
-            <h2 class="section-title">Alguns dos meus projetos</h2>
+            <h2 class="section-title" data-pt="Alguns dos meus projetos" data-en="Some of my projects">Alguns dos meus
+                projetos</h2>
 
             <!-- Front-End -->
-            <h3 class="category-title">🔷 Projetos Front-End</h3>
+            <h3 class="category-title" data-pt="Projetos Front-End" data-en="Front-End Projects">🔷 Projetos Front-End
+            </h3>
             <div class="projects-grid">
                 <div class="project-card">
                     <img src="./img/Online Orthodontist Marketing Agency.jpg" alt="Projeto Front-End 1" />
                     <div class="project-info">
-                        <h3>Landing Page React</h3>
-                        <p>Landing page pessoal do tipo moderno com React.</p>
-                        <a href="https://proactivesolutions.online/" target="_blank" class="btn small">Ver Projeto</a>
+                        <h3 data-pt="Landing Page React" data-en="React Landing Page">Landing Page React</h3>
+                        <p data-pt="Landing page pessoal do tipo moderno com React."
+                            data-en="Personal modern landing page with React.">Landing page pessoal do tipo moderno com
+                            React.</p>
+                        <a href="https://proactivesolutions.online/" target="_blank" class="btn small"
+                            data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
                     </div>
+
                 </div>
 
                 <div class="project-card">
                     <img src="frontend2.jpg" alt="Projeto Front-End 2" />
                     <div class="project-info">
-                        <h3>Portfólio Pessoal</h3>
-                        <p>Site responsivo com dark mode, animações e layout moderno.</p>
-                        <a href="#" class="btn small">Ver Projeto</a>
+                        <h3 data-pt="Portfólio Pessoal" data-en="Personal Portfolio">Portfólio Pessoal</h3>
+                        <p data-pt="Site responsivo com dark mode, animações e layout moderno."
+                            data-en="Responsive site with dark mode, animations, and modern layout.">Site responsivo com
+                            dark mode, animações e layout moderno.</p>
+                        <a href="#" class="btn small" data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
                     </div>
                 </div>
             </div>
@@ -348,12 +402,21 @@
             <h3 class="category-title">🧩 Projetos Back-End</h3>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="./img/programming-background-with-person-working-with-codes-computer.jpg" alt="Projeto Back-End 1" />
+                    <img src="./img/programming-background-with-person-working-with-codes-computer.jpg"
+                        alt="Projeto Back-End 1" />
                     <div class="project-info">
-                        <h3>Insync – Controle de Ponto Web com Relatórios Dinâmicos</h3>
-                        <p>Sistema de controle de ponto desenvolvido com PHP, MySQL, HTML, CSS e JavaScript. Permite o registro de horários, autenticação de usuários e geração de relatórios mensais e gerenciais.</p>
-                        <a href="https://github.com/DihCodigo/insync" class="btn small" target="_blank">Ver Projeto</a>
+                        <h3 data-pt="Insync – Controle de Ponto Web com Relatórios Dinâmicos"
+                            data-en="Insync – Web Time Tracking with Dynamic Reports">Insync – Controle de Ponto Web com
+                            Relatórios Dinâmicos</h3>
+                        <p data-pt="Sistema de controle de ponto desenvolvido com PHP, MySQL, HTML, CSS e JavaScript. Permite o registro de horários, autenticação de usuários e geração de relatórios mensais e gerenciais."
+                            data-en="Time tracking system developed with PHP, MySQL, HTML, CSS, and JavaScript. Allows clocking in/out, user authentication, and generation of monthly and managerial reports.">
+                            Sistema de controle de ponto desenvolvido com PHP, MySQL, HTML, CSS e JavaScript. Permite o
+                            registro de horários, autenticação de usuários e geração de relatórios mensais e gerenciais.
+                        </p>
+                        <a href="https://github.com/DihCodigo/insync" class="btn small" target="_blank"
+                            data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
                     </div>
+
                 </div>
             </div>
 
@@ -363,9 +426,12 @@
                 <div class="project-card">
                     <img src="./img/812.jpg" alt="Projeto BD 1" />
                     <div class="project-info">
-                        <h3>CRUD com MySQL</h3>
-                        <p>Sistema de gerenciamento de usuários com interface simples.</p>
-                        <a href="https://github.com/DihCodigo/CHECKPOINTGAMER_DH" target="_blank" class="btn small">Ver Projeto</a>
+                        <h3 data-pt="CRUD com MySQL" data-en="CRUD with MySQL">CRUD com MySQL</h3>
+                        <p data-pt="Sistema de gerenciamento de usuários com interface simples."
+                            data-en="User management system with a simple interface.">Sistema de gerenciamento de
+                            usuários com interface simples.</p>
+                        <a href="https://github.com/DihCodigo/CHECKPOINTGAMER_DH" target="_blank" class="btn small"
+                            data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
                     </div>
                 </div>
             </div>
@@ -376,9 +442,12 @@
                 <div class="project-card">
                     <img src="./img/emaktbannerR.png" alt="Projeto Email 1" />
                     <div class="project-info">
-                        <h3>Templates Responsivos</h3>
-                        <p>Criação de e-mails compatíveis com Gmail e Outlook usando tabelas e media queries.</p>
-                        <a href="https://dihcodigo.github.io/E-MarketingHTML/" target="_blank" class="btn small">Ver Projeto</a>
+                        <h3 data-pt="Templates Responsivos" data-en="Responsive Templates">Templates Responsivos</h3>
+                        <p data-pt="Criação de e-mails compatíveis com Gmail e Outlook usando tabelas e media queries."
+                            data-en="Creation of emails compatible with Gmail and Outlook using tables and media queries.">
+                            Criação de e-mails compatíveis com Gmail e Outlook usando tabelas e media queries.</p>
+                        <a href="https://dihcodigo.github.io/E-MarketingHTML/" target="_blank" class="btn small"
+                            data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
                     </div>
                 </div>
             </div>
@@ -389,9 +458,13 @@
                 <div class="project-card">
                     <img src="./img/business-commercial-corporate-development-concept.jpg" alt="Projeto GTM 1" />
                     <div class="project-info">
-                        <h3>Setup GAM + Header Bidding</h3>
-                        <p>Estruturação de anúncios com Prebid.js e Google Tag Manager.</p>
-                        <a href="https://github.com/DihCodigo/GTMContainer" target="_blank" class="btn small">Ver Projeto</a>
+                        <h3 data-pt="Setup GAM + Header Bidding" data-en="GAM Setup + Header Bidding">Setup GAM + Header
+                            Bidding</h3>
+                        <p data-pt="Estruturação de anúncios com Prebid.js e Google Tag Manager."
+                            data-en="Ad setup with Prebid.js and Google Tag Manager.">Estruturação de anúncios com
+                            Prebid.js e Google Tag Manager.</p>
+                        <a href="https://github.com/DihCodigo/GTMContainer" target="_blank" class="btn small"
+                            data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
                     </div>
                 </div>
             </div>
@@ -401,27 +474,27 @@
 
     <section id="contact" class="section-contact">
         <div class="container">
-            <h2 class="section-title">Entre em contato</h2>
+            <h2 class="section-title" data-pt="Entre em contato" data-en="Contact Us">Entre em contato</h2>
 
             <form class="contact-form">
                 <div class="form-row">
                     <div class="form-group">
                         <input type="text" name="name" required />
-                        <label>Nome</label>
+                        <label data-pt="Nome" data-en="Name">Nome</label>
                     </div>
                     <div class="form-group">
                         <input type="email" name="email" required />
-                        <label>Email</label>
+                        <label data-pt="Email" data-en="Email">Email</label>
                     </div>
                 </div>
 
                 <div class="form-group full">
                     <textarea name="message" rows="6" required></textarea>
-                    <label>Mensagem</label>
+                    <label data-pt="Mensagem" data-en="Message">Mensagem</label>
                 </div>
 
                 <button type="submit" class="btn-submit">
-                    <span>Enviar</span>
+                    <span data-pt="Enviar" data-en="Send">Enviar</span>
                 </button>
             </form>
         </div>
