@@ -59,7 +59,6 @@ body {
   transform: scaleX(-1);
 }
 
-/* ======= NAVBAR ======= */
 .navbar {
   display: flex;
   width: 100%;
@@ -84,7 +83,6 @@ body {
   margin: 0 5px;
 }
 
-/* ======= HERO SECTION ======= */
 .hero {
   display: flex;
   justify-content: center;
@@ -223,78 +221,7 @@ body {
   box-shadow: -15px -15px 0 0 var(--color-primary);
 }
 
-/* ======= RESPONSIVO ======= */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: var(--spacing-sm);
-    gap: 10px;
-  }
 
-  .logo {
-    font-size: 24px;
-  }
-
-  .hero {
-    flex-direction: column;
-    height: auto;
-    background: linear-gradient(to bottom, var(--color-primary) 60%, var(--color-highlight) 40%);
-  }
-
-  .left,
-  .right {
-    width: 100%;
-    padding: 45px 20px;
-  }
-
-  .left h1 {
-    font-size: 38px;
-    text-align: center;
-  }
-
-  .left p,
-  .features div {
-    font-size: var(--font-size-sm);
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .photo-frame {
-    width: 250px;
-    height: 320px;
-  }
-
-  .photo-border {
-    bottom: -50px;
-    right: -50px;
-  }
-
-  .dot-grid,
-  .dot-grid2,
-  .dot-grid.small,
-  .line-step {
-    display: none;
-  }
-
-  .dot-grid1 {
-    display: block;
-    left: 30%;
-    top: 80%;
-  }
-
-  .line-curve {
-    top: 12%;
-  }
-}
-
-/* ======= GROWTH ARROWS ======= */
 .growth-decor {
   position: absolute;
   bottom: var(--spacing-sm);
@@ -324,7 +251,6 @@ body {
   100% { transform: rotate(45deg) translateY(0); opacity: 0.3; }
 }
 
-/* ======= HAMBURGUER ======= */
 .menu-toggle {
   width: 30px;
   height: 24px;
@@ -375,7 +301,6 @@ body {
   background-color: var(--color-white);
 }
 
-/* ======= MENU LATERAL ======= */
 .side-menu {
   position: fixed;
   top: 0;
@@ -407,7 +332,6 @@ body {
   text-decoration: underline;
 }
 
-/* ======= SECTION tecnologias ======= */
 .section-tecnologias {
   position: relative;
   background-color: var(--color-bg-light);
@@ -450,7 +374,6 @@ body {
   color: var(--color-text-dark);
 }
 
-/* ======= DECORAÇÕES tecnologias ======= */
 .decor {
   position: absolute;
   pointer-events: none;
@@ -541,7 +464,8 @@ body {
   cursor: pointer;
 }
 
-/* Tooltip */
+
+
 .tooltip {
   position: absolute;
   bottom: 110%;
@@ -607,7 +531,6 @@ body {
   font-weight: 700;
 }
 
-/* Pontinhos decorativos */
 .decoracao-pontinhos {
   position: absolute;
   width: 120px;
@@ -628,22 +551,6 @@ body {
   right: 20px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .titulo-azul {
-    font-size: 1.6rem;
-  }
-
-  .atividades-texto p {
-    font-size: 1rem;
-  }
-
-  .decoracao-pontinhos {
-    width: 80px;
-    height: 80px;
-    background-size: 10px 10px;
-  }
-}
 
 .tec__ {
   display: flex;
@@ -769,7 +676,7 @@ body {
   padding: 12px 24px;
   text-decoration: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 2px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 1s ease-in-out;
   cursor: pointer;
@@ -881,7 +788,7 @@ textarea:not(:placeholder-shown) + label {
   font-size: 16px;
   color: #0a0a0a;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 2px;
   cursor: pointer;
   box-shadow: 0 0 12px var(--color-accent);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -920,3 +827,85 @@ textarea:not(:placeholder-shown) + label {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(37, 211, 102, 0.9);
 }
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    background: linear-gradient(to bottom, var(--color-primary) 60%, var(--color-bg-light) 40%);
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: var(--spacing-md);
+    align-items: center;
+  }
+
+  .left h1, .left h1 span {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .left p {
+    font-size: var(--font-size-sm);
+    text-align: center;
+    margin: var(--spacing-sm) 0;
+  }
+
+  .photo-frame {
+    width: 220px;
+    height: 300px;
+  }
+
+  .photo-border {
+    bottom: -40px;
+    right: -40px;
+  }
+
+  .dot-grid, .dot-grid1, .dot-grid2, .dot-grid.small, .line-step, .line-curve {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 1050px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    font-size: var(--font-size-sm);
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .menu-toggle {
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 20px;
+  }
+
+  .section-tecnologias {
+    padding: var(--spacing-sm);
+  }
+
+  .text-block h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .text-block p {
+    text-align: justify;
+    font-size: var(--font-size-sm);
+  }
+
+  .tec__ {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
